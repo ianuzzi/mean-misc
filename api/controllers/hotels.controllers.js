@@ -18,7 +18,7 @@ module.exports.hotelsGetAll = function(req, res) {
 	};
 
 	collection
-		.find()
+		.find() 
 		.skip(offset)
 		.limit(count)
 		.toArray(function(err, docs) {
@@ -26,7 +26,6 @@ module.exports.hotelsGetAll = function(req, res) {
 				res
 					.status(200)
 					.json(docs);
-
 		});
 
 	
