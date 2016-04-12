@@ -10,7 +10,7 @@ var open = function() {
 			return;
 		}
 		_connection = db;
-		console.log("DB Connection Open", db);
+		console.log("DB Connection Open"); //console.log("DB Connection Open", db); to list the db object to the console
 	});
 };
 
